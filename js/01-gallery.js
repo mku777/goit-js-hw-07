@@ -48,7 +48,6 @@ function onLargeImageShow(event) {
   function onPressEsc(event) {
     if (event.code === "Escape") {
       modal.close();
-      window.removeEventListener("keydown", onPressEsc);
     }
   }
 }

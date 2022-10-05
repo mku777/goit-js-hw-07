@@ -41,11 +41,9 @@ function onLargeImageShow(event) {
   );
   instance.show();
 
-  galleryElements.addEventListener("keydown", (event) =>
-  {
+  galleryElements.addEventListener("keydown", (event) => {
     if (event.code === "Escape") {
-        instance.close();
+      instance.close();
     }
   });
-  }
-
+}

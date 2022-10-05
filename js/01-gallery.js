@@ -41,13 +41,11 @@ function onLargeImageShow(event) {
   );
   instance.show();
 
-  if (instance.visible()) {
-    window.addEventListener("keydown", onPressEsc);
+  galleryElements.addEventListener("keydown", (event) =>
+  {
+    if (event.code === "Escape") {
+        instance.close();
+    }
+  });
   }
 
-  function onPressEsc(event) {
-    if (event.code === "Escape") {
-      modal.close();
-    }
-  }
-}
